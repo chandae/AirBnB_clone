@@ -1,5 +1,5 @@
 # AIRBNB_CLONE
-AirBnB Clone is simple clone/version of the AirBnB American Vocation Marketplace. This project is divided into several parts namely:
+AirBnB Clone is simple clone/version of the AirBnB American Vacation Marketplace. This project is divided into several parts namely:
 1. The Console (Command Intepreter)
 2. Web Static
 3. MySQL Storage
