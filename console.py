@@ -10,8 +10,6 @@ import models
 from models import storage
 from models.base_model import BaseModel
 
-import pprint
-
 
 class HBNBCommand(cmd.Cmd):
     """
