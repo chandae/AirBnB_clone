@@ -21,29 +21,25 @@ class BaseModel():
 
     def __init__(self, *args, **kwargs):
         """ Base Model Constructor: use kwargs to create new instances """
-
-        # Get id, created_at and updated_at from **kwargs
         if kwargs:
-            if (kwargs.get('id', None)):
-                self.id = uuid.UUID(kwargs.get('id'))
-            if (kwargs.get('created_at', None)):
-                self.created_at = dt.strptime(
-                    kwargs.get('created_at'), self.format
-                    )
-            if (kwargs.get('updated_at', None)):
-                self.updated_at = dt.strptime(
-                    kwargs.get('updated_at'), self.format
-                    )
+            for attr_name, attr_value in kwargs.items():
+                if attr_name == "created_at" or attr_name == "updated_at":
+                    # Format created_at and updated_at before creating instance
+                    attr_value = dt.strptime(attr_value, self.format)
+                elif attr_name == "__class__":
+                    continue
+
+                setattr(self, attr_name, attr_value)
         else:
-            self.id = uuid.uuid4()
+            self.id = str(uuid.uuid4())
             self.created_at = dt.now()
             self.updated_at = dt.now()
             models.storage.new(self)
 
     def __str__(self) -> str:
         """ Prints [<class name>] (<self.id>) <self.__dict__> """
-        print(f"[{self.__class__.__name__}]", f"({self.id})", self.__dict__)
-        return ""
+        value = f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
+        return value
 
     def save(self):
         """
