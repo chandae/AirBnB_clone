@@ -260,6 +260,12 @@ class HBNBCommand(cmd.Cmd):
             id = cmds[1].lstrip('destory("').rstrip('")')
             self.do_destroy(f"{cmds[0]} {id}")
             return
+        elif 'update' in cmds[1]:
+            # Update object by id with given attribute name and value
+            args = cmds[1]
+            id, attr_name, value = eval(args[args.find("("):])
+            self.do_update(f"{cmds[0]} {id} {attr_name} {value}")
+            return
 
         # Return all objects belonging to the given class
         cmd_ptn = re.compile(r"\w.all")
