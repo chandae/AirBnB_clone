@@ -42,7 +42,6 @@ class HBNBCommand(cmd.Cmd):
         if len(cmds) == 0:
             print("** class name is missing **")
             return
-
         try:
             eval(cmds[0])
         except NameError:
@@ -206,7 +205,6 @@ class HBNBCommand(cmd.Cmd):
         if len(cmds) == 1:
             print("** instance id missing **")
             return
-
         try:
             storage.reload()
             obj = storage.all()
@@ -263,8 +261,14 @@ class HBNBCommand(cmd.Cmd):
         elif 'update' in cmds[1]:
             # Update object by id with given attribute name and value
             args = cmds[1]
-            id, attr_name, value = eval(args[args.find("("):])
-            self.do_update(f"{cmds[0]} {id} {attr_name} {value}")
+            args = eval(args[args.find("("):])
+            if len(args) == 2:
+                for key, value in args.items():
+                    new = f"{cmds[0]} {args[0]} {args[1].strip('.')} {args[2]}"
+                    self.do_update(new)
+            else:
+                id, attr_name, value = args
+                self.do_update(f"{cmds[0]} {id} {attr_name} {value}")
             return
 
         # Return all objects belonging to the given class
