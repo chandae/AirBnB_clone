@@ -7,7 +7,7 @@ AirBnB Clone is simple clone/version of the AirBnB American Vacation Marketplace
 5. RESTful API
 6. Web Dynamic
 
-## The Console
+## 1. The Console
 The console helps manage projects objects in development including:
 1. Create a new object (ex: a User, Place etc)
 2. Retrieve an object from a file. database etc
@@ -58,3 +58,8 @@ EOF  help  quit
 (hbnb) 
 $
 ```
+
+## 2. Web Static
+Contains the frontend of the AirBnB clone that is:
+1. HTML (Structure of the Site)
+2. CSS (Style and Design of the site)
