@@ -62,7 +62,6 @@
 }
 
 .filters button {
-    display: inline;
     position: absolute;
     font-size: 18px;
     color: #FFFFFF;
@@ -72,9 +71,9 @@
     border: none;
     border-radius: 4px;
     margin: 0 5px;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    text-align: center;
+    top: 10px;
+    right: 5px;
 }
 .filters button:hover {
     opacity: 90%;
