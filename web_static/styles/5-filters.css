@@ -24,7 +24,7 @@
     font-weight: 600;
 }
 
-.filters .locations h4 {
+.filters .locations h4, .filters .amenities h4 {
     font-weight: 400;
     padding-bottom: 2px;
 }
