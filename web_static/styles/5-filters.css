@@ -1,0 +1,50 @@
+/* Footer Stylesheet */
+
+.filters {
+    color: #000;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+.filters .locations, .filters .amenities {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.filters .locations {
+    border-right: 1px solid #DDDDDD;
+}
+
+.filters .locations h3, .filters .amenities h3 {
+    margin-bottom: -15px;
+    font-weight: 600;
+}
+
+.filters .locations h4 {
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+.filters button {
+    display: inline;
+    position: absolute;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #FF5A5F;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.filters button:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
