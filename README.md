@@ -65,4 +65,3 @@ Contains the frontend of the AirBnB clone that is:
 2. CSS (Style and Design of the site)
 
 <img width="1604" alt="airbnb_landing" src="https://user-images.githubusercontent.com/79806436/184349452-74961585-0e9b-4de7-9324-6e1e7736d927.png">
-
