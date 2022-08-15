@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB Clone</title>
+
+    <!-- Browser Tab Icon and External Style Sheet -->
+    <link href="images/airbnb_icon.png" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/100-places.css">
+</head>
+<body>
+    <header>
+        <img src="/web_static/images/airbnb_logo.png"/>
+    </header>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Filters Section -->
+        <section class="filters">
+            <div class="locations">
+                <h3>States</h3>
+                <h4>Alabama, Arizona, Alaska...</h4>
+                <ul class="popover">
+                    <h2>Alabama:</h2>
+                        <li>Alabama</li>
+                        <li>Arizona</li>
+                    <h2>Arizona:</h2>
+                        <li>Alabama</li>
+                        <li>Arizona</li>
+                    <h2>Alaska:</h2>
+                        <li>Alabama</li>
+                        <li>Arizona</li>
+                    <h2>California:</h2>
+                        <li>Alabama</li>
+                        <li>Arizona</li>
+                    <h2>Colorado:</h2>
+                        <li>Alabama</li>
+                        <li>Arizona</li>
+                </ul>
+            </div>
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <h4>Wifi, Kitchen, Parking...</h4>
+                <ul class="popover">
+                    <li>Wifi</li>
+                    <li>Kitchen</li>
+                    <li>Parking</li>
+                    <li>Gym</li>
+                </ul>
+            </div>
+            <button>Search</button>
+        </section>
+
+        <!-- Plcases Filters Section -->
+        <section class="places">
+            <h1>Places</h1>
+            <article>
+                <h2>My Home</h2>
+                <div class="price_by_night">
+                    <p>$85</p>
+                </div>
+
+                <!-- Information section -->
+                <div class="information">
+                    <div class="max-guest">
+                        <img src="/web_static/images/icon_group.png"/>
+                        <p>3 Guests</p>
+                    </div>
+                    <div class="number_rooms">
+                        <img src="/web_static/images/icon_bed.png"/>
+                        <p>4 Bedrooms</p>
+                    </div>
+                    <div class="number_bathrooms">
+                        <img src="/web_static/images/icon_bath.png"/>
+                        <p>2 Bathrooms</p>
+                    </div>
+                </div>
+
+                <!-- User Section -->
+                <div class="user">
+                    <p>Owner: John Linen</p>
+                </div>
+
+                <!-- Place Description -->
+                <div class="description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga vitae minima! Reprehenderit tempora,
+                        culpa exercitationem, aliquam nemo alias, blanditiis iste molestiae consequatur doloremque id nam aspernatur
+                        obcaecati explicabo? Deserunt.</p>
+                </div>
+
+                <!-- List of Amenities -->
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>
+                            <img src="/web_static/images/icon_tv.png"/>
+                            <p>TV</p>
+                        </li>
+                        <li>
+                            <img src="/web_static/images/icon_wifi.png"/>
+                            <p>Wifi</p>
+                        </li>
+                        <li>
+                            <img src="/web_static/images/icon_car.png"/>
+                            <p>Parking Space</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </article>
+            <article>
+                <h2>Tiny House</h2>
+                <div class="price_by_night">
+                    <p>$95</p>
+                </div>
+
+                <!-- Information section -->
+                <div class="information">
+                    <div class="max-guest">
+                        <img src="/web_static/images/icon_group.png"/>
+                        <p>5 Guests</p>
+                    </div>
+                    <div class="number_rooms">
+                        <img src="/web_static/images/icon_bed.png"/>
+                        <p>5 Bedrooms</p>
+                    </div>
+                    <div class="number_bathrooms">
+                        <img src="/web_static/images/icon_bath.png"/>
+                        <p>3 Bathrooms</p>
+                    </div>
+                </div>
+
+                <!-- User Section -->
+                <div class="user">
+                    <p>Owner: Mary Goodhouse</p>
+                </div>
+
+                <!-- Place Description -->
+                <div class="description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga vitae minima! Reprehenderit tempora,
+                        culpa exercitationem, aliquam nemo alias, blanditiis iste molestiae consequatur doloremque id nam aspernatur
+                        obcaecati explicabo? Deserunt.</p>
+                </div>
+
+                <!-- List of Amenities -->
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>
+                            <img src="/web_static/images/icon_tv.png"/>
+                            <p>TV</p>
+                        </li>
+                        <li>
+                            <img src="/web_static/images/icon_wifi.png"/>
+                            <p>Wifi</p>
+                        </li>
+                        <li>
+                            <img src="/web_static/images/icon_pets.png"/>
+                            <p>Pet Friendly</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </article>
+            <article>
+                <h2>Vacation Home</h2>
+                <div class="price_by_night">
+                    <p>$65</p>
+                </div>
+
+                <!-- Information section -->
+                <div class="information">
+                    <div class="max-guest">
+                        <img src="/web_static/images/icon_group.png"/>
+                        <p>2 Guests</p>
+                    </div>
+                    <div class="number_rooms">
+                        <img src="/web_static/images/icon_bed.png"/>
+                        <p>2 Bedrooms</p>
+                    </div>
+                    <div class="number_bathrooms">
+                        <img src="/web_static/images/icon_bath.png"/>
+                        <p>1 Bathrooms</p>
+                    </div>
+                </div>
+
+                <!-- User Section -->
+                <div class="user">
+                    <p>Owner: Jean Linen</p>
+                </div>
+
+                <!-- Place Description -->
+                <div class="description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga vitae minima! Reprehenderit tempora,
+                        culpa exercitationem, aliquam nemo alias, blanditiis iste molestiae consequatur doloremque id nam aspernatur
+                        obcaecati explicabo? Deserunt.</p>
+                </div>
+
+                <!-- List of Amenities -->
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>
+                            <img src="/web_static/images/icon_tv.png"/>
+                            <p>TV</p>
+                        </li>
+                        <li>
+                            <img src="/web_static/images/icon_wifi.png"/>
+                            <p>Wifi</p>
+                        </li>
+                        <li>
+                            <img src="/web_static/images/icon_fan.png"/>
+                            <p>Air Conditioning</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </article>
+        </section>
+    </div>
+
+    <footer>Best School</footer>
+</body>
+</html>
